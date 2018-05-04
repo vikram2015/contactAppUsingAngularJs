@@ -1,0 +1,35 @@
+<form novalidate>
+
+    <!-- <button type="submit"  ng-click="saveContact()">Contacts</button> -->
+    <button type="submit" ng-click="addCompany()" class="btn btn-success" style="margin-top: 15px; float: right">Add Company</button>
+
+    <div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">S.No.</th>
+                    <th scope="col">Company ID</th>
+                    <th scope="col">Company Type</th>
+                    <th scope="col">Company Name</th>
+                    <th scope="col">Company Address</th>
+                    <th scope="col">Company Contacts</th>
+                    <th scope="col">Company Employee</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="company in companyList track by $index">
+                    <th scope="row">{{$index+1}}</th>
+                    <td>{{company.companyId}}</td>
+                    <td>{{company.companyType}}</td>
+                    <td>{{company.companyName}}</td>
+                    <td>{{company.companyAdress}}</td>
+                    <td>{{company.companyContact}}</td>
+                    <td>{{company.companyEmployeeNumber}}</td>
+                    <td><button type="submit" value="submit" class="btn btn-success" ng-click="viewCompany(company)">View</button></td>
+                    <td><button type="submit" value="submit" class="btn btn-success" ng-click="updateCompany(company)">Update</button></td>
+                    <td><button type="submit" value="submit" class="btn btn-danger" ng-click="deleteCompany(company, $index)"><i class="fa fa-times" aria-hidden="true"></i>Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</form>

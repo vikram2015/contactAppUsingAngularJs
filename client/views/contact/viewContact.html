@@ -1,0 +1,73 @@
+<!-- <div class="container">
+<form novalidate>
+    <button type="submit" class="btn btn-success" ng-click="goBack()" style="float: right; margin-top: 15px; width: 100px;">Back</button>
+    <div class="form-group">
+        <label style="margin-top: 50px;">First Name :</label>
+        <input type="text" class="form-control" id="fName" placeholder="First Name" ng-model="formdata.firstName" ng-disabled="true">
+    </div>
+    <div class="form-group">
+        <label>Last Name :</label>
+        <input type="text" class="form-control" id="lName" placeholder="Last Name" ng-model="formdata.lastName" ng-disabled="true">
+    </div>
+    <div class="form-group">
+        <label>Adress :</label>
+        <input type="text" class="form-control" id="adress" placeholder="Address" ng-model="formdata.address" ng-disabled="true">
+    </div>
+    <div class="form-group">
+        <label>Contact:</label>
+        <input type="text" class="form-control" id="contact" placeholder="Mobile Number" ng-model="formdata.number" ng-disabled="true">
+    </div>
+
+</form>
+</div> -->
+
+
+<div class="card">
+  <div class="card-header">
+        <h5>Create Contact</h5>
+        <a class=" btn btn-success pull-right" ng-click="goBack();" style="float: right; margin-top: 15px; width: 100px;"><i class="fa fa-angle-left" ></i> Back</a>
+        <div>
+            <a href="#" id="customererrors" title="Customer Bulk Upload Errors. Please correct and upload again." class="pull-right bulk-upload-error" data-toggle="popover" data-placement="bottom"
+               data-content="">
+                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <div class="card-block">
+<form novalidate>
+    <div class="form-group">
+        <label style="margin-top: 50px;">First Name :</label>
+        <input type="text" class="form-control" id="fName" placeholder="First Name" ng-model="formdata.firstName" ng-disabled="true">
+    </div>
+    <div class="form-group">
+        <label>Last Name :</label>
+        <input type="text" class="form-control" id="lName" placeholder="Last Name" ng-model="formdata.lastName" ng-disabled="true">
+    </div>
+    <div class="form-group">
+        <label>Adress :</label>
+        <input type="text" class="form-control" id="adress" placeholder="Address" ng-model="formdata.address" ng-disabled="true">
+    </div>
+    <div class="form-group">
+        <label>Contact:</label>
+        <input type="text" class="form-control" id="contact" placeholder="Mobile Number" ng-model="formdata.number" ng-disabled="true">
+    </div>
+
+</form>
+
+    </div>
+
+    <div class="card-footer">
+        <div class="row ng-scope">
+            <div class="col-sm-2">
+                <button type="button" class="btn btn-primary"><b><i class="fa fa-angle-left" aria-hidden="true"></i> <i class="fa fa-angle-left" aria-hidden="true"></i></b></button>
+            </div>
+            <!-- <div class="col-sm-8 text-center">
+                <button type="button" class="btn btn-primary" ng-click="save(customerForm1,customerForm2,customerForm3,customerForm4,customerForm5,customerForm6)" ng-disabled="customerForm.$invalid">Save</button>
+            </div> -->
+            <div class="col-sm-2">
+                <button type="button" class="btn btn-primary" style="float:right;"><b><i class="fa fa-angle-right" aria-hidden="true"></i> <i class="fa fa-angle-right" aria-hidden="true"></i></b></button>
+            </div>
+        </div>
+    </div>
+
+</div>

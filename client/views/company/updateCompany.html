@@ -1,0 +1,31 @@
+<div class="container">
+<form novalidate>
+    <button type="submit" class="btn btn-primary" ng-click="goBack()" style="float: right; margin-top: 15px; width: 100px;">Back</button>
+    <div class="form-group">
+        <label style="margin-top: 50px;">Company ID :</label>
+        <input type="text" class="form-control" id="cmpId" placeholder="Company ID" ng-model="formdata.companyId" required>
+    </div>
+    <div class="form-group">
+        <label>Company Type :</label>
+        <input type="text" class="form-control" id="cmpType" placeholder="Company Type" ng-model="formdata.companyType" required>
+    </div>
+    <div class="form-group">
+        <label>Company Name :</label>
+        <input type="text" class="form-control" id="cmpName" placeholder="Company Name" ng-model="formdata.companyName" required>
+    </div>
+    <div class="form-group">
+        <label>Company Adress :</label>
+        <input type="text" class="form-control" id="cmpAdd" placeholder="Company Adress" ng-model="formdata.companyAdress">
+    </div>
+    <div class="form-group">
+        <label>Company Number :</label>
+        <input type="text" class="form-control" id="cmpContact" placeholder="Company Contact" ng-model="formdata.companyContact">
+    </div>
+    <div class="form-group">
+        <label>Company Employee Number:</label>
+        <input type="text" class="form-control" id="cmpnumber" placeholder="Company Number" ng-model="formdata.companyEmployeeNumber">
+    </div>
+
+    <button type="submit" class="btn btn-success" ng-click="updateCompanyToDB()" style="float: right;">Update Employee</button>
+</form>
+</div>
