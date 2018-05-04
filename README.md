@@ -1,5 +1,5 @@
 # contactAppUsingAngularJs
-This is simple contact app using html css bootstrap javascript angularjs nodejs mongodb and express
+This is Demo contact app using html css bootstrap javascript angularjs nodejs mongodb and express
 
 
 For running this application follow the below steps :-
