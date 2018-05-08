@@ -92,6 +92,16 @@ routerApp.config(function($stateProvider, $urlRouterProvider){
             templateUrl: 'views/company/viewCompany.html',
             controller: 'viewCompanyController'
         })
+
+        /**
+         * This is the route for user
+         */
+        .state('userRegestration',{
+            url: '/userRegestration',
+            templateUrl: 'views/user/userRegistration.html',
+            controller: 'userRegistrationController'
+        })
+
         
 
 

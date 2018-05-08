@@ -10,6 +10,7 @@ var indexRouter = require('./server/routes/index');
 var contactRouter = require('./server/routes/contactRoute');
 var employeeRouter = require('./server/routes/employeeRoute');
 var companyRouter = require('./server/routes/companyRoute');
+var user = require('./server/routes/userRoute');
 // var usersRouter = require('./routes/users');
 
 var app = express();
@@ -34,7 +35,7 @@ app.use('/', indexRouter);
 app.use('/contact', contactRouter);
 app.use('/employee', employeeRouter);
 app.use('/company', companyRouter);
-// app.use('/users', usersRouter);
+app.use('/users', user);
 
 //default route
 app.get('*',function (req, res) {
@@ -67,5 +68,7 @@ app.use(function(err, req, res, next) {
 //         console.log("connected to port 27017");
 //     }
 // })
+
+
 
 module.exports = app;

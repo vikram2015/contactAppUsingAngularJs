@@ -23,5 +23,9 @@ angular.module('routerNewApp',[
     'addCompanyController',
     'updateCompanyController',
     'viewCompanyController',
-    'companyService'
+    'companyService',
+
+    //Route for User
+    'userRegistrationController',
+    'userService'
 ]);

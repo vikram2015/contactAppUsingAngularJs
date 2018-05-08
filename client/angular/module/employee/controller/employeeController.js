@@ -8,7 +8,6 @@ function employeeController($scope, $http, $state, employeeService) {
     $scope.selectedCompany;
 
     $scope.addEmployee = function () {
-        console.log($scope.selectedCompany)
         $state.go('addEmployee');
     }
 
@@ -31,10 +30,8 @@ function employeeController($scope, $http, $state, employeeService) {
     }
 
     $scope.selectEmployeeForCompany = function(){
-        console.log($scope.selectedCompany);
         employeeService.getEmployForCompany($scope.selectedCompany._id)
             .then(function(company){
-                console.log(company)
                 $scope.employeeList = company.company;
             })
     }
@@ -48,12 +45,10 @@ function employeeController($scope, $http, $state, employeeService) {
         });
 
         employeeService.getCompanyList().then(function(company){
-            console.log(company);
             for(var i=0; i<company.company.length; i++){
                 $scope.companyName.push(company.company[i]);
             }
             $scope.selectedCompany=$scope.companyName[0];
-            console.log($scope.companyName)
         })
     });
 

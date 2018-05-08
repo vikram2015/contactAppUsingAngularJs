@@ -8,18 +8,7 @@ var saveNewContact = function (parameter) {
             var contact = new Contact(parameter);
             contact.save().then((result) => {
                 resolve(result);
-                // res.status(201).send({
-                //     success: true,
-                //     MSG: 'Contact saved successfully',
-                //     contact: result
-                // });
             });
-            // .catch((err) => {
-            //     console.log(err);
-            //     res.status(500).send({
-            //         error: err
-            //     });
-            // });
         } else {
             reject();
         }
@@ -31,7 +20,6 @@ var getContactList = function () {
         Contact.find({ isTrue: true })
             .exec()
             .then((result) => {
-                // console.log(result);
                 if (result && result.length > 0) {
                     resolve(result);
                 } else {

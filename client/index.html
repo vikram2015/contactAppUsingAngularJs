@@ -23,12 +23,13 @@
   <!-- Services-->
   <script type="text/javascript" src="./angular/module/home/service/homeService.js"></script>
   <script type="text/javascript" src="./angular/module/contact/service/contactService.js"></script>
-   <script type="text/javascript" src="./angular/module/employee/service/employeeService.js"></script>    
-   <script type="text/javascript" src="./angular/module/company/service/companyService.js"></script>    
-   
-   
-   <!-- Home Controller -->
-   <script type="text/javascript" src="./angular/module/home/controller/homeController.js"></script>
+  <script type="text/javascript" src="./angular/module/employee/service/employeeService.js"></script>
+  <script type="text/javascript" src="./angular/module/company/service/companyService.js"></script>
+  <script type="text/javascript" src="./angular/module/user/service/userService.js"></script>
+
+
+  <!-- Home Controller -->
+  <script type="text/javascript" src="./angular/module/home/controller/homeController.js"></script>
 
 
   <!-- Contact Controller -->
@@ -45,9 +46,16 @@
 
   <!-- Company Controller-->
   <script type="text/javascript" src="./angular/module/company/controller/companyController.js"></script>
-     <script type="text/javascript" src="./angular/module/company/controller/addCompanyController.js"></script>   
-    <script type="text/javascript" src="./angular/module/company/controller/updateCompanyController.js"></script>  
-    <script type="text/javascript" src="./angular/module/company/controller/viewCompanyController.js"></script>  
+  <script type="text/javascript" src="./angular/module/company/controller/addCompanyController.js"></script>
+  <script type="text/javascript" src="./angular/module/company/controller/updateCompanyController.js"></script>
+  <script type="text/javascript" src="./angular/module/company/controller/viewCompanyController.js"></script>
+
+
+  <!-- User Controller-->
+  <script type="text/javascript" src="./angular/module/user/controller/userRegistration.js"></script>
+  <!-- <script type="text/javascript" src="./angular/module/company/controller/addCompanyController.js"></script>    -->
+  <!-- <script type="text/javascript" src="./angular/module/company/controller/updateCompanyController.js"></script>   -->
+  <!-- <script type="text/javascript" src="./angular/module/company/controller/viewCompanyController.js"></script>   -->
 
 
 
@@ -77,6 +85,9 @@
         </li>
         <li class="nav-item active">
           <a class="nav-link" ui-sref="company">Company <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" ui-sref="userRegestration">User Registration <span class="sr-only">(current)</span></a>
         </li>
 
       </ul>

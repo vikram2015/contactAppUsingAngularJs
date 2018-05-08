@@ -1,0 +1,43 @@
+<div class="container">
+    <form novalidate>
+        <button type="submit" class="btn btn-primary" ng-click="goBack()" style="float: right; margin-top: 15px; width: 100px;">Back</button>
+        <div class="form-group">
+            <label style="margin-top: 50px;">User Name :</label>
+            <input type="text" class="form-control" id="userName" placeholder="Email" ng-model="formdata.userName" required>
+        </div>
+        <div class="form-group">
+            <label>Password :</label>
+            <input type="password" class="form-control" id="Password" placeholder="Password" ng-model="formdata.Password" ng-minlength="1"
+                required>
+        </div>
+        <div class="form-group">
+            <label>First Name :</label>
+            <input type="text" class="form-control" id="firstName" placeholder="First Name" ng-model="formdata.firstName" ng-maxlength="30"
+                required>
+        </div>
+        <div class="form-group">
+            <label>Last Name :</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Last Name" ng-model="formdata.lastName" ng-maxlength="30">
+        </div>
+        <div class="row">
+            <div class="form-group" style="margin-left: 10px;">
+                <label>Gender :</label><br/>
+                <label>Male</label>
+                <input type="radio" name="gender" ng-model="formdata.gender" ng-value="maleValue"> &nbsp;&nbsp;&nbsp;
+                <label>Female</label>
+                <input type="radio" name="gender" ng-model="formdata.gender" value="female"> &nbsp;&nbsp;&nbsp;
+                <label>Other</label>
+                <input type="radio" name="gender" ng-model="formdata.gender" value="other"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            </div>
+            <div class="form-group" style="width: 20%; margin-left: 300px;">
+                <label>Age :</label>
+                <input type="Number" class="form-control" id="age" placeholder="Age" ng-model="formdata.age" ng-maxlength="3">
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Alternate Email :</label>
+            <input type="text" class="form-control" id="alternateEmail" placeholder="Alternate Email" ng-model="formdata.alternateEmail">
+        </div>
+        <button type="submit" class="btn btn-success" ng-click="addUserRegistration()" style="float: right;">Register</button>
+    </form>
+</div>
